@@ -28,16 +28,16 @@ locationName: { //  readable address
       type: Boolean,
       required: true,
     },
-    image: {
-    url: {
-      type: String,
-      required: true
-    },
-    cloudinary_id: {
-      type: String,
-      required: true
-    }
-  },
+  //   image: {
+  //   url: {
+  //     type: String,
+  //     required: true
+  //   },
+  //   cloudinary_id: {
+  //     type: String,
+  //     required: true
+  //   }
+  // },
   capacity: {
       type: String,
       required: true

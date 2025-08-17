@@ -130,7 +130,7 @@ router.get('/:eventId', async (req, res) => {
 
 router.use(verifyToken);
 
-// ✅ Create an event (no file upload)
+// Create an event (no file upload)
 router.post('/', async (req, res) => {
   try {
     req.body.owner = req.user._id;
@@ -178,5 +178,7 @@ router.delete('/:eventId', async (req, res) => {
     res.status(500).json(error.message);
   }
 });
+
+
 
 module.exports = router;
