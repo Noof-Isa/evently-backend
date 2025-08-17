@@ -27,6 +27,6 @@ app.use('/events', eventRouter);
 app.use('/events', attendanceRouter);
 
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
   console.log('The express app is ready!');
 });
